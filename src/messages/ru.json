@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "header": {
+      "category": "Категория",
+      "search": "Искат",
+      "pay": "Оплатить",
+      "treck": "Отследить",
+      "shop": "Корзина",
+      "favorites": "Избранное",
+      "signIn": "Войти"
+    }
+  }
+}
