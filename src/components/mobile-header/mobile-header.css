@@ -1,0 +1,42 @@
+.mb-header-container {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.mb-header-container .mobile-left {
+    display: flex;
+    align-items: center;
+}
+
+.mb-header-container .mobile-left img {
+    width: 150px;
+    margin: 0px 20px;
+}
+
+.mb-header-container .mobile-left button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    color: #008dff;
+    cursor: pointer;
+}
+
+.mb-header-container .mobile-right button{
+    background-color: #008dff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: #fff;
+} 
+
+@media screen and (max-width: 1027px) {
+  .mb-header-container {
+    display: flex;
+  }
+}

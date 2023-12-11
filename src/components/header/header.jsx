@@ -7,6 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import BottomNavigation from "./bottom-navigation";
+import MobileHeader from "../mobile-header/mobile-header";
 import "./header.css";
 
 const Header = () => {
@@ -93,6 +94,7 @@ const Header = () => {
           </ul>
         </div>
       </header>
+      <MobileHeader  changeLanguage={handleChangeLanguage} lang={i18n.language}/>
       <BottomNavigation />
     </>
   );
