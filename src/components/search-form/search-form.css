@@ -1,0 +1,42 @@
+form {
+  width: 100%;
+  display: flex;
+  padding: 0px 40px;
+}
+
+form input {
+  padding: 10px 20px;
+  width: 100%;
+  border: 2px solid #008dff;
+  outline: none;
+  color: #008dff;
+  border-radius: 10px 0px 0px 10px;
+}
+
+form button {
+  padding: 7px 20px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  background-color: #008dff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+form button:hover {
+  background-color: #006bc3;
+}
+
+.d-none {
+  display: none;
+}
+
+@media screen and (max-width: 1027px) {
+  .d-none {
+    display: flex;
+  }
+  form{
+    padding: 0px 20px;
+  }
+}

@@ -65,35 +65,7 @@ header {
   margin-right: 5px;
 }
 
-.left form {
-  width: 100%;
-  display: flex;
-  padding: 0px 40px;
-}
 
-.left form input {
-  padding: 10px 20px;
-  width: 100%;
-  border: 2px solid #008dff;
-  outline: none;
-  color: #008dff;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.left form button {
-  padding: 7px 20px;
-  border-radius: 0px 10px 10px 0px;
-  border: none;
-  background-color: #008dff;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.left form button:hover {
-  background-color: #006bc3;
-}
 
 .right ul {
   display: flex;

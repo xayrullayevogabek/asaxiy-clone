@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
+import Form from "../search-form/search-from";
 import "./mobile-header.css";
 import Sidebar from "./sidebar";
 
 const MobileHeader = ({ changeLanguage, lang }) => {
   const [isOpen, setIsOpen] = useState(false);
-
 
   return (
     <>
@@ -27,7 +27,8 @@ const MobileHeader = ({ changeLanguage, lang }) => {
           )}
         </div>
       </div>
-      <Sidebar open={isOpen} setIsOpen={setIsOpen}/>
+      <Form  className={"d-none"}/>
+      <Sidebar open={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };

@@ -8,6 +8,7 @@ import { FiUser } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import BottomNavigation from "./bottom-navigation";
 import MobileHeader from "../mobile-header/mobile-header";
+import Form from "../search-form/search-from";
 import "./header.css";
 
 const Header = () => {
@@ -29,10 +30,7 @@ const Header = () => {
             <IoMenuOutline className="category-icon" />
             {t("header.category")}
           </button>
-          <form>
-            <input type="text" placeholder={t("header.search") + "..."} />
-            <button>{t("header.search")}</button>
-          </form>
+          <Form />
         </div>
         <div className="right">
           <ul>
@@ -94,7 +92,10 @@ const Header = () => {
           </ul>
         </div>
       </header>
-      <MobileHeader  changeLanguage={handleChangeLanguage} lang={i18n.language}/>
+      <MobileHeader
+        changeLanguage={handleChangeLanguage}
+        lang={i18n.language}
+      />
       <BottomNavigation />
     </>
   );

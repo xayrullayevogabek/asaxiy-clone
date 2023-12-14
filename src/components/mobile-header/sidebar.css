@@ -1,22 +1,70 @@
-.overlay{
-    background-color: rgba(0, 0, 0, 0.597);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.597);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sidebar {
-    width: 90%;
-    height: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: -90%;
-    transition: all .5s;
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: all 0.5s;
+  padding: 5px 15px;
 }
 
 .active {
-    left: 0;
+  left: 0;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-section img {
+  width: 150px;
+}
+
+.top-section button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+  color: #008dff;
+  cursor: pointer;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 0px 5px;
+}
+
+.navigation-container a {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transform: all 0.5s;
+}
+
+.navigation-container a:hover {
+  color: #008dff;
+}
+
+.navigation-container a .sidebar-icon{
+    font-size: 30px;
+    margin-right: 10px;
 }
