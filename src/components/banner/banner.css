@@ -1,0 +1,53 @@
+.banner-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiper-container-image{
+    width: 50%;
+    border-radius: 15px;
+    margin-right:20px ;
+}
+
+.swiper-container-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.swiper-container-card{
+    width: 50%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.swiper-container-card .swiper-slide-container{
+    width: 100%;
+}
+
+.swiper-container-card  .swiper-navigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.swiper-container-card  .swiper-navigation .swiper-btns .navigate-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #008dff;
+    color: #008dff;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
