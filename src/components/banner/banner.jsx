@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
-import Card from "../cards/card";
+import Card from "../cards/banner-card";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -55,9 +55,23 @@ const Banner = () => {
           </div>
         </div>
         <Swiper
-          slidesPerView={3.5}
-          spaceBetween={30}
+          slidesPerView={2}
+          spaceBetween={10}
           loop={true}
+          breakpoints={{
+            640:{
+              slidesPerView:1,
+              spaceBetween:10
+            },
+            641:{
+              slidesPerView:3,
+              spaceBetween:10
+            },
+            1284:{
+              slidesPerView:3.5,
+              spaceBetween:10
+            }
+          }}
           className="mySwiper swiper-slide-container"
           onSwiper={(swiper) => {
             swiperRef.current = swiper

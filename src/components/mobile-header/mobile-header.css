@@ -2,39 +2,37 @@
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
 }
-
 .mb-header-container .mobile-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 .mb-header-container .mobile-left img {
-    width: 150px;
-    margin: 0px 20px;
+  width: 150px;
+  margin: 0px 10px;
 }
-
 .mb-header-container .mobile-left button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    color: #008dff;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color: #008dff;
+  cursor: pointer;
 }
 
-.mb-header-container .mobile-right button{
-    background-color: #008dff;
-    border: none;
-    border-radius: 10px;
-    padding: 8px 10px;
-    cursor: pointer;
-    color: #fff;
-} 
-
+.mb-header-container .mobile-right button {
+  background-color: #008dff;
+  border: none;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 @media screen and (max-width: 1027px) {
   .mb-header-container {
     display: flex;
