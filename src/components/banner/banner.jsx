@@ -19,8 +19,8 @@ const images = [
   "https://assets.asaxiy.uz/uploads/banner/desktop/6569a3b5c5858.jpg.webp",
 ];
 
-const Banner = () => {
-    const swiperRef = useRef()
+const Banner = ({ discountProducts }) => {
+  const swiperRef = useRef();
   return (
     <div className="banner-container">
       <Swiper
@@ -46,10 +46,16 @@ const Banner = () => {
           <h3>Hafta Chegirmalari</h3>
 
           <div className="swiper-btns">
-            <button onClick={() => swiperRef.current.slidePrev()} className="navigate-btn">
+            <button
+              onClick={() => swiperRef.current.slidePrev()}
+              className="navigate-btn"
+            >
               <GrFormPrevious />
             </button>
-            <button onClick={() => swiperRef.current.slideNext()} className="navigate-btn">
+            <button
+              onClick={() => swiperRef.current.slideNext()}
+              className="navigate-btn"
+            >
               <GrFormNext />
             </button>
           </div>
@@ -59,27 +65,27 @@ const Banner = () => {
           spaceBetween={10}
           loop={true}
           breakpoints={{
-            640:{
-              slidesPerView:1,
-              spaceBetween:10
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
             },
-            641:{
-              slidesPerView:3,
-              spaceBetween:10
+            641: {
+              slidesPerView: 3,
+              spaceBetween: 10,
             },
-            1284:{
-              slidesPerView:3.5,
-              spaceBetween:10
-            }
+            1284: {
+              slidesPerView: 3.5,
+              spaceBetween: 10,
+            },
           }}
           className="mySwiper swiper-slide-container"
           onSwiper={(swiper) => {
-            swiperRef.current = swiper
+            swiperRef.current = swiper;
           }}
         >
-          {images.map((item, indx) => (
+          {discountProducts.map((item, indx) => (
             <SwiperSlide className="swiper-card-slide" key={indx}>
-              <Card />
+              <Card product={item}/>
             </SwiperSlide>
           ))}
         </Swiper>
